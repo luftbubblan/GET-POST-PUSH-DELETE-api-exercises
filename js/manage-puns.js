@@ -29,7 +29,7 @@ async function fetchAllPuns() {
     //runs counter function
     counter(puns.length);
     
-    $('a').on('click', async function(e) {
+    $('a').click(async function(e) {
         //preventsDefault from Del-btn, fetches correct pun and deletes it from API
         if($(this).html() === 'Delete') {
             e.preventDefault();
